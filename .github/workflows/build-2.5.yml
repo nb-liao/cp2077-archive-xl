@@ -26,7 +26,7 @@ jobs:
         run: xmake f -y -m release -a x64
 
       - name: Build
-        run: xmake -y
+        run: xmake -y -v
 
       - name: Collect artifacts
         shell: pwsh

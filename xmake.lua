@@ -34,7 +34,8 @@ else
     set_runtimes("MD")
 end
 
-add_requires("hopscotch-map", "minhook", "spdlog", "tiltedcore", "yaml-cpp", "mimalloc")
+add_requires("hopscotch-map", "minhook", "spdlog", "tiltedcore", "yaml-cpp")
+add_requires("mimalloc 2.2.4", {configs = {rltgenrandom = true}})
 
 target("ArchiveXL")
     set_default(true)
